@@ -1,5 +1,5 @@
 .header {
-  height: 95vh;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -12,7 +12,7 @@
     url('../../images/hero.jpeg');
   background-size: cover;
   background-position: center;
-  background-attachment: top;
+  background-attachment: fixed;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 

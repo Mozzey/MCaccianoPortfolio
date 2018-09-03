@@ -13,29 +13,79 @@ body {
 
 .navbar {
   height: 5vh;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9001;
   display: flex;
   flex-direction: row;
   align-items: center;
   color: white;
-  background-color: black; }
-  .navbar-brand a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
-    margin-left: 1rem; }
+  background-color: rgba(0, 0, 0, 0.9); }
+  .navbar-brand {
+    animation: moveInLeft 1s; }
+    .navbar-brand a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.5rem;
+      margin-left: 2rem; }
+      .navbar-brand a:hover {
+        transition: 0.5s ease-out;
+        color: orangered; }
+  .navbar-social {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    animation: moveInBottom 1s ease-out; }
+    .navbar-social a {
+      margin: 0 2rem;
+      color: #fff; }
+      .navbar-social a:hover {
+        transition: 0.5s ease-out;
+        color: orangered; }
   .navbar__links {
     margin-left: auto;
     margin-right: 2rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    font-size: 1rem; }
+    justify-content: space-around;
+    font-size: 1rem;
+    animation: moveInRight 1s ease-out; }
     .navbar__links a {
       text-decoration: none;
       color: #ffffff; }
+      .navbar__links a:hover {
+        transition: 0.5s ease-out;
+        color: orangered; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
 
 .header {
-  height: 95vh;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -43,7 +93,7 @@ body {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(255, 69, 0, 0.3)), url("../../images/hero.jpeg");
   background-size: cover;
   background-position: center;
-  background-attachment: top;
+  background-attachment: fixed;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
 
 .heading-primary {
