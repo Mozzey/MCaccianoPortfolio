@@ -9,7 +9,8 @@ body {
   font-family: 'Lato', sans-serif;
   line-height: 1.7;
   color: #777777;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  display: grid; }
 
 .navbar {
   height: 5vh;
@@ -112,3 +113,36 @@ body {
     font-size: 4rem; }
   .heading-primary--sub-2 {
     font-size: 1.75rem; }
+
+.about {
+  display: grid;
+  grid-template-rows: minmax(1fr, 1fr, 1fr, 1fr, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  grid-gap: 50px; }
+  .about-title {
+    margin-top: 100px;
+    grid-row: 1;
+    grid-column: 3 / 5;
+    font-size: 2rem;
+    justify-self: center; }
+  .about-image {
+    grid-row: 2;
+    grid-column: 3 / 5;
+    justify-self: center;
+    margin-top: 40px; }
+  .about img {
+    max-height: 300px;
+    width: 20rem;
+    max-width: 20rem;
+    background-position: top;
+    -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 30%, 100% 70%, 75% 100%, 25% 100%, 0% 70%, 0% 30%); }
+  .about-blurb {
+    grid-row: 3;
+    grid-column: 2 / 6;
+    font-size: 1.5rem; }
+  .about-test {
+    grid-row: 4;
+    grid-column: 2 / 6;
+    background-color: orangered; }
