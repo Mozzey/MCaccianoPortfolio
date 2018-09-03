@@ -3,57 +3,92 @@
   grid-template-rows: minmax(1fr, 1fr, 1fr, 1fr, 1fr);
   grid-template-columns: repeat(6, 1fr);
   align-items: center;
-  grid-gap: 50px;
 
-  &-title {
-    margin-top: 100px;
-    grid-row: 1;
-    grid-column: 3 / 5;
-    font-size: 2rem;
-    justify-self: center;
-  }
+  &__main {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-rows: minmax(1fr, 1fr, 1fr, 1fr, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 50px;
+    justify-items: center;
 
-  &-image {
-    grid-row: 2;
-    grid-column: 3 / 5;
-    justify-self: center;
-    margin-top: 40px;
-  }
+    &-title {
+      margin-top: 100px;
+      grid-row: 1;
+      grid-column: 3 / 5;
+      font-size: 2rem;
+      justify-self: center;
+    }
 
-  img {
-    max-height: 300px;
-    width: 20rem;
-    max-width: 20rem;
-    background-position: top;
-    -webkit-clip-path: polygon(
-      30% 0%,
-      70% 0%,
-      100% 30%,
-      100% 70%,
-      70% 100%,
-      30% 100%,
-      0% 70%,
-      0% 30%
-    );
-    clip-path: polygon(
-      25% 0%,
-      75% 0%,
-      100% 30%,
-      100% 70%,
-      75% 100%,
-      25% 100%,
-      0% 70%,
-      0% 30%
-    );
+    &-image {
+      grid-row: 2;
+      grid-column: 3 / 5;
+      justify-self: center;
+      margin-top: 40px;
+    }
+
+    img {
+      max-height: 300px;
+      width: 20rem;
+      max-width: 20rem;
+      background-position: top;
+      -webkit-clip-path: polygon(
+        30% 0%,
+        70% 0%,
+        100% 30%,
+        100% 70%,
+        70% 100%,
+        30% 100%,
+        0% 70%,
+        0% 30%
+      );
+      clip-path: polygon(
+        25% 0%,
+        75% 0%,
+        100% 30%,
+        100% 70%,
+        75% 100%,
+        25% 100%,
+        0% 70%,
+        0% 30%
+      );
+    }
+    &-blurb {
+      grid-row: 3;
+      grid-column: 2 / 6;
+      font-size: 1.5rem;
+      margin-bottom: 10rem;
+    }
   }
-  &-blurb {
-    grid-row: 3;
+  &__placeholder {
+    height: 100px;
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    border-bottom: 2px solid orangered;
+  }
+  &__background {
+    grid-row: 3 / 5;
+    height: 100vh;
+    align-self: flex-start;
+    grid-column: 1 / -1;
+  }
+  &__sub {
+    z-index: 100;
+    grid-row: 2 / 4;
     grid-column: 2 / 6;
-    font-size: 1.5rem;
-  }
-  &-test {
-    grid-row: 4;
-    grid-column: 2 / 6;
-    background-color: orangered;
+    height: 100vh;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border: 2px solid orangered;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    &-header {
+      grid-column: 1 / -1;
+      justify-self: center;
+      align-self: center;
+      font-size: 2rem;
+    }
   }
 }
