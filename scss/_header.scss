@@ -2,12 +2,13 @@
   height: 100vh;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  text-align: center;
   background-image: linear-gradient(
-      to right,
-      rgba($black, 0.5),
-      rgba($primary-color, 0.3)
+      to top,
+      rgba($black, 0.8),
+      rgba($black, 0.2)
     ),
     url('../../images/hero.jpeg');
   background-size: cover;
@@ -39,10 +40,9 @@
   }
 
   &--sub {
-    &-1 {
-      font-size: 4rem;
+    .developer {
+      color: $secondary-color;
     }
-
     &-2 {
       font-size: 1.75rem;
     }
