@@ -2767,6 +2767,9 @@ body {
       .about__cards--foodie-icon {
         color: #60dd4f; }
 
+.projects__testing {
+  color: blue; }
+
 .footer {
   height: 15vh;
   margin-top: 200px;
