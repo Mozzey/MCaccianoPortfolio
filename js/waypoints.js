@@ -42,3 +42,22 @@ var waypoint = new Waypoint({
   },
   offset: 500
 });
+
+// document.getElementById('projectImage').style.opacity = 0;
+var waypoint = new Waypoint({
+  element: document.getElementById('projectImage'),
+  handler: function() {
+    document.getElementById('projectImage').classList.add('slideInLeft');
+  },
+  offset: 500
+});
+
+var waypoint = new Waypoint({
+  element: document.getElementById('projectDescription'),
+  handler: function() {
+    document
+      .getElementById('projectDescription')
+      .classList.add('<slideInRight></slideInRight>');
+  },
+  offset: 500
+});
