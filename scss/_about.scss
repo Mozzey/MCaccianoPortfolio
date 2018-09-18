@@ -49,7 +49,6 @@
       text-align: center;
     }
   }
-
   &__cards {
     grid-column: 1 / -1;
     color: #fff;
@@ -69,33 +68,26 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
     p {
       width: 80%;
     }
-
     &--dev {
       flex-direction: column;
       align-items: center;
-
       &-icon {
         color: $primary-color;
       }
     }
-
     &--nerd {
       flex-direction: column;
       align-items: center;
-
       &-icon {
         color: rgb(197, 101, 22);
       }
     }
-
     &--foodie {
       flex-direction: column;
       align-items: center;
-
       &-icon {
         color: $secondary-color;
       }
