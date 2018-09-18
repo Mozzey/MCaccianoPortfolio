@@ -7,6 +7,7 @@
       flex-direction: row;
       justify-content: space-between;
       width: 40%;
+      margin-top: 3rem;
       font-size: 1.5rem;
 
       &__content {
@@ -15,11 +16,13 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        width: 80%;
         height: 350px;
-        margin: 5rem 0;
+        margin-top: 5rem;
+        // margin: 5rem 0;
         text-decoration: none;
         color: $white;
+        box-shadow: 0 2px 3rem rgba(0, 0, 0, 0.5);
 
         &--github {
           background-color: $black;
@@ -27,6 +30,7 @@
             color: $black;
             background-color: $white;
             border: solid 1px $black;
+            box-shadow: 2px 2px 2.5rem rgba(0, 0, 0, 0.5);
           }
         }
         &--linkedin {
@@ -35,14 +39,16 @@
             color: #0e6397;
             background-color: $white;
             border: solid 1px #0e6397;
+            box-shadow: 2px 2px 2.5rem #0e6397;
           }
         }
-        &--email {
-          background-color: $secondary-color;
+        &--twitch {
+          background-color: #392e5c;
           &:hover {
-            color: $secondary-color;
+            color: #392e5c;
             background-color: $white;
-            border: solid 1px $secondary-color;
+            border: solid 1px #392e5c;
+            box-shadow: 2px 2px 2.5rem #392e5c;
           }
         }
         &--twitter {
@@ -51,6 +57,7 @@
             color: rgb(0, 102, 255);
             background-color: $white;
             border: solid 1px rgb(0, 102, 255);
+            box-shadow: 2px 2px 2.5rem rgb(0, 102, 255);
           }
         }
       }

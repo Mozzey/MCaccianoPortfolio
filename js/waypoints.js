@@ -55,9 +55,46 @@ var waypoint = new Waypoint({
 var waypoint = new Waypoint({
   element: document.getElementById('projectDescription'),
   handler: function() {
-    document
-      .getElementById('projectDescription')
-      .classList.add('<slideInRight></slideInRight>');
+    document.getElementById('projectDescription').classList.add('slideInRight');
   },
   offset: 500
 });
+/////////// Contact cards /////////////
+
+// github card
+// document.getElementById('github').style.opacity = 0;
+// var waypoint = new Waypoint({
+//   element: document.getElementById('github'),
+//   handler: function() {
+//     document.getElementById('github').classList.add('fadeIn');
+//   },
+//   offset: 100
+// });
+
+// linkedin card
+// document.getElementById('linkedin').style.opacity = 0;
+// var waypoint = new Waypoint({
+//   element: document.getElementById('linkedin'),
+//   handler: function() {
+//     document.getElementById('linkedin').classList.add('fadeInRightBig');
+//   },
+//   offset: 500
+// });
+// twitch card
+// document.getElementById('twitch').style.opacity = 0;
+// var waypoint = new Waypoint({
+//   element: document.getElementById('twitch'),
+//   handler: function() {
+//     document.getElementById('twitch').classList.add('fadeInRight');
+//   },
+//   offset: 500
+// });
+// twitter card
+// document.getElementById('twitter').style.opacity = 0;
+// var waypoint = new Waypoint({
+//   element: document.getElementById('twitter'),
+//   handler: function() {
+//     document.getElementById('twitter').classList.add('fadeInLeft');
+//   },
+//   offset: 500
+// });
