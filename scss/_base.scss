@@ -19,5 +19,6 @@ body {
   line-height: 1.7;
   color: $primary-text-color;
   box-sizing: inherit;
-  display: grid;
+  display: flex;
+  flex-direction: column;
 }

@@ -100,3 +100,34 @@
     transform: translateY(0);
   }
 }
+
+@media all and (max-width: 851px) {
+  .navbar {
+    &-brand {
+      a {
+        font-size: 1rem;
+      }
+    }
+
+    &-social {
+      margin: 0 auto;
+      a {
+        &:hover {
+        }
+      }
+    }
+
+    &__links {
+      margin: 0 auto;
+      padding: 0 5px;
+    }
+  }
+}
+
+@media all and (max-width: 610px) {
+  .navbar {
+    &-social {
+      display: none;
+    }
+  }
+}

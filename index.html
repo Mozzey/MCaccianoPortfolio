@@ -15,6 +15,9 @@
 
 <body>
   <nav class="navbar">
+    <div class="navbar-mobile">
+      <a id="nav-toggle" href="#!"><span></span></a>
+    </div>
     <h4 class="navbar-brand">
       <a href="index.html">Michael Cacciano</a>
     </h4>
@@ -37,13 +40,12 @@
 
   <header class="header">
     <div class="header__text-box">
-      <div class="heading-primary">
-        <span class="heading-primary--main animated fadeInDown">
-          <span class="heading-primary--main-first-letter">M</span>ichael
-          <span class="heading-primary--main-first-letter">C</span>acciano
+      <div class="header__text-box-primary">
+        <span class="header__text-box-primary--main animated fadeInDown">
+          Michael Cacciano
         </span>
-        <span class="heading-primary--sub heading-primary--sub-2">I'm a <span class="developer">Developer</span> with a love
-          for the simple things</span>
+        <span class="header__text-box-primary--sub">I'm a <span class="developer">Developer</span>
+          with a love for the simple things</span>
       </div>
     </div>
   </header>
@@ -52,23 +54,19 @@
     <div class="about__main">
 
       <h2 class="about__main-title">Developer &nbsp;|&nbsp; Nerd &nbsp;|&nbsp; Foodie</h2>
-      <div class="about__main-image">
-        <div class="about__main-image--overlay">
-          <img src="./images/aboutPortrait.jpg" id="aboutMeImage" class="animated" alt="Headshot of Michael Cacciano">
+      <div class="about__main-container">
+        <div class="about__main-container-image">
+          <div class="about__main-container-image--overlay">
+            <img src="./images/aboutPortrait.jpg" id="aboutMeImage" class="animated about__main-container-image--overlay about__main-container-image--overlay-me"
+              alt="Headshot of Michael Cacciano">
+          </div>
+        </div>
+        <div class="about__main-container-blurb animated" id="mainBlurb">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fugiat cumque saepe nihil, ipsa excepturi nostrum
+            numquam non facere aspernatur voluptas nesciunt! Cumque est ratione magnam. Cupiditate eum temporibus inventore.</p>
         </div>
       </div>
-      <div class="about__main-blurb animated" id="mainBlurb">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fugiat cumque saepe nihil, ipsa excepturi nostrum
-          numquam non facere aspernatur voluptas nesciunt! Cumque est ratione magnam. Cupiditate eum temporibus inventore.</p>
-      </div>
     </div>
-    <div class="about__placeholder"></div>
-    <div class="about__background"></div>
-    <!-- <div class="about__xp">
-      <div class="about__xp-header">
-        <h2>XP</h2>
-      </div>
-    </div> -->
     <div class="about__cards" id="aboutCards">
       <div class="about__cards about__cards--dev animated " id="devCard">
         <i class="about__cards--dev-icon fas fa-laptop-code fa-5x"></i>
@@ -90,7 +88,7 @@
 
   <footer class="footer">
     <h4 class="footer-brand">
-      <a href="index.html">Created by Michael Cacciano</a>
+      <a href="index.html">MCacciano</a>
     </h4>
     <div class="footer-social">
       <a href="https://www.linkedin.com/in/michaelcacciano/" target="_new">

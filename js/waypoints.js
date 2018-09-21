@@ -44,21 +44,21 @@ var waypoint = new Waypoint({
 });
 
 // document.getElementById('projectImage').style.opacity = 0;
-var waypoint = new Waypoint({
-  element: document.getElementById('projectImage'),
-  handler: function() {
-    document.getElementById('projectImage').classList.add('slideInLeft');
-  },
-  offset: 500
-});
+// var waypoint = new Waypoint({
+//   element: document.getElementById('projectImage'),
+//   handler: function() {
+//     document.getElementById('projectImage').classList.add('slideInLeft');
+//   },
+//   offset: 500
+// });
 
-var waypoint = new Waypoint({
-  element: document.getElementById('projectDescription'),
-  handler: function() {
-    document.getElementById('projectDescription').classList.add('slideInRight');
-  },
-  offset: 500
-});
+// var waypoint = new Waypoint({
+//   element: document.getElementById('projectDescription'),
+//   handler: function() {
+//     document.getElementById('projectDescription').classList.add('slideInRight');
+//   },
+//   offset: 500
+// });
 /////////// Contact cards /////////////
 
 // github card
