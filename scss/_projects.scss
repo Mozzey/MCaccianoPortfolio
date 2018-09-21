@@ -1,38 +1,38 @@
 .main {
-  a {
-    text-decoration: none;
-    color: $black;
-
-    i {
-      color: $black;
-    }
-  }
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   &__header {
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 8rem;
+    align-self: center;
+    margin-top: 50px;
+    font-size: 2rem;
+    text-transform: capitalize;
   }
-
   &__projects {
     margin-top: 13rem;
-    display: grid;
-    grid-gap: 20px;
-    margin: 5rem 1rem;
-    grid-template-columns: repeat(3, 1fr);
-
-    img {
-      width: 100%;
-      height: 15rem;
-      border: 2px solid $black;
-
-      &:hover {
-        opacity: 0.5;
-        border-color: $secondary-color;
-      }
-    }
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
 
     &__item {
+      width: 30%;
+      &-link {
+        text-decoration: none;
+        // &-img {
+
+        // }
+        img {
+          width: 100%;
+          height: 15rem;
+          border: 2px solid $black;
+
+          &:hover {
+            opacity: 0.5;
+            border-color: $secondary-color;
+          }
+        }
+      }
       &__btn {
         display: block;
         padding: 0.5rem 1rem;
@@ -41,6 +41,8 @@
         border: 1px solid $black;
         text-align: center;
         font-size: 1rem;
+        text-decoration: none;
+        color: $black;
 
         &-icon {
           margin-right: 1rem;
@@ -54,49 +56,17 @@
     }
   }
 }
-// .projects {
-//   margin-top: 250px;
 
-//   &__row {
-//     width: 100%;
-//     height: 300px;
-//     display: flex;
-//     font-size: 1rem;
+@media all and (max-width: 1027px) {
+  .main {
+    &__projects {
+      flex-direction: row;
+      align-items: center;
 
-//     &--1 {
-//       margin: 0;
-//       flex-direction: row;
-//     }
-
-//     &--2 {
-//       margin: 0;
-//       flex-direction: row-reverse;
-//     }
-
-//     &-image {
-//       width: 35%;
-//       height: 100%;
-
-//       img {
-//         width: 100%;
-//         height: 100%;
-//       }
-//     }
-
-//     &-description {
-//       width: 65%;
-//       height: 100%;
-//       display: flex;
-//       flex-direction: column;
-//       text-align: center;
-//       border: 1px solid $black;
-//       justify-content: space-evenly;
-
-//       &--technologies {
-//         display: flex;
-//         justify-content: center;
-//         padding: 1rem;
-//       }
-//     }
-//   }
-// }
+      &__item {
+        width: 65%;
+        margin: 30px 0;
+      }
+    }
+  }
+}
